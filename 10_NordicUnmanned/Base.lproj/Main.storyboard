@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HYM-FQ-Xam">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,271 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_NordicUnmanned" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dronebilde.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RSL-YQ-uhr">
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-FV-j3d">
+                                <rect key="frame" x="412.5" y="718" width="255" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Trykk her for å gå videre">
+                                    <color key="titleColor" red="0.88504689930000002" green="0.56982564930000001" blue="0.36346316340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fe5-gB-x3n" kind="show" id="5ll-A1-fjv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Droner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46z-bR-f6G">
+                                <rect key="frame" x="467.5" y="200" width="145" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QDc-FV-j3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dub-gD-8g0"/>
+                            <constraint firstItem="RSL-YQ-uhr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OqX-CY-H2H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QDc-FV-j3d" secondAttribute="bottom" constant="50" id="Yci-Yg-w2V"/>
+                            <constraint firstAttribute="trailing" secondItem="RSL-YQ-uhr" secondAttribute="trailing" id="ecu-Z7-aBI"/>
+                            <constraint firstItem="RSL-YQ-uhr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fIz-SM-J55"/>
+                            <constraint firstAttribute="bottom" secondItem="RSL-YQ-uhr" secondAttribute="bottom" id="l44-4g-vWn"/>
+                            <constraint firstItem="46z-bR-f6G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="t43-pO-UJh"/>
+                            <constraint firstItem="46z-bR-f6G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xot-MV-QjZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oRq-Lz-KTd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="856.66666666666663" y="92.592592592592581"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="CdG-eC-Ysd">
+            <objects>
+                <viewController id="Fe5-gB-x3n" customClass="VC2" customModule="_0_NordicUnmanned" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LOG-32-FMg">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dronebilde.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QxS-9y-sGq">
+                                <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LT-3J-Z10">
+                                <rect key="frame" x="231" y="250" width="618" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Trykk her for å se introduksjonsvideo">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f4-sh-Q6f">
+                                <rect key="frame" x="412.5" y="718" width="255" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Trykk her for å gå videre">
+                                    <color key="titleColor" red="0.88504689930000002" green="0.56982564930000001" blue="0.36346316340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hps-T0-6st" kind="show" id="Hyt-jN-jU6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6f4-sh-Q6f" firstAttribute="centerX" secondItem="LOG-32-FMg" secondAttribute="centerX" id="0TV-Nm-spl"/>
+                            <constraint firstItem="7LT-3J-Z10" firstAttribute="top" secondItem="o3a-PP-nBJ" secondAttribute="top" constant="200" id="GZ3-1c-XQh"/>
+                            <constraint firstItem="o3a-PP-nBJ" firstAttribute="bottom" secondItem="6f4-sh-Q6f" secondAttribute="bottom" constant="50" id="LnH-ik-5Bd"/>
+                            <constraint firstItem="7LT-3J-Z10" firstAttribute="centerX" secondItem="LOG-32-FMg" secondAttribute="centerX" id="dYF-LW-eFl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o3a-PP-nBJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DMQ-y9-Q45" colorLabel="IBBuiltInLabel-Red"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2o-da-dns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="819"/>
+        </scene>
+        <!--Quiz1-->
+        <scene sceneID="c0C-IH-ZbL">
+            <objects>
+                <viewController id="hps-T0-6st" customClass="Quiz1" customModule="_0_NordicUnmanned" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dj4-VC-GZs">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kan man fly hvor man vil med drone i Norge? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1b-CW-qnx">
+                                <rect key="frame" x="206" y="119" width="668" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hk-0i-gtR">
+                                <rect key="frame" x="461" y="356.5" width="158" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="53" minY="25" maxX="54" maxY="25"/>
+                                <state key="normal" title="Ja!" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="knapp1:" destination="hps-T0-6st" eventType="touchUpInside" id="UX1-0i-dU0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTA-2f-N68">
+                                <rect key="frame" x="451.5" y="486" width="177" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="50" minY="25" maxX="50" maxY="25"/>
+                                <state key="normal" title="Nei.." backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="knapp2:" destination="hps-T0-6st" eventType="touchUpInside" id="aVq-Zf-8r5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTK-34-2Sd">
+                                <rect key="frame" x="375.5" y="684.5" width="329" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Riktig! Trykk her for å gå videre">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zfB-y4-Djc" kind="show" id="fBx-d0-Wsv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470934149999998" green="0.69707590340000003" blue="0.40548548099999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kTA-2f-N68" firstAttribute="centerX" secondItem="dj4-VC-GZs" secondAttribute="centerX" id="If1-Ch-Cp2"/>
+                            <constraint firstItem="9Hk-0i-gtR" firstAttribute="centerX" secondItem="dj4-VC-GZs" secondAttribute="centerX" id="TQt-ki-byj"/>
+                            <constraint firstItem="VTK-34-2Sd" firstAttribute="centerX" secondItem="dj4-VC-GZs" secondAttribute="centerX" id="Tnb-2a-0kq"/>
+                            <constraint firstItem="D1b-CW-qnx" firstAttribute="top" secondItem="wqK-mW-oUy" secondAttribute="top" constant="69" id="UKT-Dh-Wcx"/>
+                            <constraint firstItem="VTK-34-2Sd" firstAttribute="top" secondItem="kTA-2f-N68" secondAttribute="bottom" constant="100" id="Uke-7N-1L8"/>
+                            <constraint firstItem="9Hk-0i-gtR" firstAttribute="centerY" secondItem="dj4-VC-GZs" secondAttribute="centerY" id="Wlb-mI-EtB"/>
+                            <constraint firstItem="D1b-CW-qnx" firstAttribute="centerX" secondItem="9Hk-0i-gtR" secondAttribute="centerX" id="gl2-15-Un1"/>
+                            <constraint firstItem="D1b-CW-qnx" firstAttribute="leading" secondItem="wqK-mW-oUy" secondAttribute="leading" constant="206" id="pVg-Bc-BRh"/>
+                            <constraint firstItem="kTA-2f-N68" firstAttribute="top" secondItem="9Hk-0i-gtR" secondAttribute="bottom" constant="30" id="zb3-8V-U1W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wqK-mW-oUy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jR0-z4-LdG"/>
+                    <connections>
+                        <outlet property="gaaVidere" destination="VTK-34-2Sd" id="MYS-3f-fT0"/>
+                        <outlet property="knapp1_utseende" destination="9Hk-0i-gtR" id="eCK-zZ-kRR"/>
+                        <outlet property="knapp2_utseende" destination="kTA-2f-N68" id="wOY-Xh-5f1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7P-ni-l0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.66666666666663" y="1557.7777777777776"/>
+        </scene>
+        <!--Quiz2-->
+        <scene sceneID="oZ8-ay-Fcw">
+            <objects>
+                <viewController id="zfB-y4-Djc" customClass="Quiz2" customModule="_0_NordicUnmanned" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWK-9i-ckm">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ta en titt på bildet under. Ville man fått lov til å fly her? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLV-iy-WKI">
+                                <rect key="frame" x="85.5" y="110.5" width="909.5" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYh-Dw-qbl">
+                                <rect key="frame" x="458" y="229" width="137" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Se bilde">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8px-fv-wYg">
+                                <rect key="frame" x="461" y="356.5" width="158" height="97"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="53" minY="25" maxX="54" maxY="25"/>
+                                <state key="normal" title="Ja!" backgroundImage="rectangle.fill" catalog="system">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="knapp1:" destination="hps-T0-6st" eventType="touchUpInside" id="1MH-s0-JgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94330793619999997" green="0.69967967269999998" blue="0.42834794520000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8px-fv-wYg" firstAttribute="centerX" secondItem="eWK-9i-ckm" secondAttribute="centerX" id="WhX-Wr-Vb4"/>
+                            <constraint firstItem="8px-fv-wYg" firstAttribute="centerY" secondItem="eWK-9i-ckm" secondAttribute="centerY" id="tUt-JK-wVA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g2i-3O-1n6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HwD-Tc-P4o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSf-5Q-XS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851.66666666666663" y="2280"/>
+        </scene>
+        <!--Quiz3-->
+        <scene sceneID="JeK-vE-d3y">
+            <objects>
+                <viewController id="XNV-ln-I77" customClass="Quiz3" customModule="_0_NordicUnmanned" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ab-mA-nIP">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2bilde.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CtN-fW-fsS">
+                                <rect key="frame" x="0.0" y="437" width="500" height="333"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CtN-fW-fsS" secondAttribute="trailing" id="L5I-WQ-mCa"/>
+                            <constraint firstAttribute="bottom" secondItem="CtN-fW-fsS" secondAttribute="bottom" id="YjD-ef-wZa"/>
+                            <constraint firstItem="CtN-fW-fsS" firstAttribute="leading" secondItem="1ab-mA-nIP" secondAttribute="leading" id="uc4-6c-8gw"/>
+                            <constraint firstItem="CtN-fW-fsS" firstAttribute="top" secondItem="1ab-mA-nIP" secondAttribute="top" id="zBM-h3-z8N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J08-W1-ahB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZv-Sv-PDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="2434"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4vj-Ms-nAL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HYM-FQ-Xam" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mhv-LZ-hg5">
+                        <rect key="frame" x="0.0" y="0.0" width="1080" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UFu-RE-0Oj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64X-kT-ps2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.88888888888889" y="92.592592592592581"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2bilde.jpg" width="500" height="333"/>
+        <image name="dronebilde.jpg" width="1080" height="810"/>
+        <image name="rectangle.fill" catalog="system" width="128" height="93"/>
+    </resources>
 </document>
