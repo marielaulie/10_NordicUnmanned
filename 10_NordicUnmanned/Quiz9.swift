@@ -1,14 +1,14 @@
 //
-//  Quiz2.swift
+//  Quiz9.swift
 //  10_NordicUnmanned
 //
-//  Created by Mariel Aulie Hinderaker on 02/07/2021.
+//  Created by Mariel Aulie Hinderaker on 12/07/2021.
 //  Copyright © 2021 Mariel Aulie Hinderaker. All rights reserved.
 //
 
 import UIKit
 
-class Quiz2: UIViewController {
+class Quiz9: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
